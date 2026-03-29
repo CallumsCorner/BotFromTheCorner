@@ -287,7 +287,7 @@ client.on('message', (channel, tags, message, self) => {
     const targetUser = args[1] ? args[1].replace('@', '').toLowerCase() : tags.username;
     const isCheckingOther = targetUser !== tags.username.toLowerCase();
 
-    fetch(`https://decapi.me/twitch/followage/${channelName}/${targetUser}?token=k24JdxuTODgxxDOJMuyzcm1aWZuISQLLBKQuUu23`)
+    fetch(`https://decapi.me/twitch/followage/${channelName}/${targetUser}?token=oops`)
       .then(res => res.text())
       .then(data => {
         let response;
